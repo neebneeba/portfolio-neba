@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.year-tag {
+  width: 150px;
+  height: 40px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.year-tag:before {
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid;
+  border-top: 20px solid transparent;
+  height: 0px;
+  width: 0px;
+  margin-left: 150px;
+}

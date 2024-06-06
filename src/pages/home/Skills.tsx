@@ -78,8 +78,8 @@ const Skills: FC = () => {
   ];
 
   return (
-    <div className="container flex flex-col space-y-5">
-      <h1 className="font-oswald mx-auto text-5xl font-bold">Skills</h1>
+    <div id="skills" className="container flex flex-col space-y-5">
+      <h1 className="mx-auto font-oswald text-5xl font-bold">Skills</h1>
       <div className="grid grid-cols-4 gap-10">
         {skills.map((item) => (
           <Skill icon={item.icons} key={useId()} title={item.title} />

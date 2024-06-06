@@ -1,9 +1,12 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 // Components
 import CircleImage from "../../components/CircleImage";
 
 const Banner: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-row justify-center space-x-10">
       <div className="my-auto space-y-10 text-2xl">
@@ -13,12 +16,12 @@ const Banner: FC = () => {
         <br />
         Software Engineer
         <br />
-        <button
-          className="rounded border border-yellow-400 px-10 py-5 text-yellow-400 hover:border-yellow-100 hover:text-yellow-100"
-          type="button"
+        <a
+          className="inline-block rounded border border-yellow-400 px-10 py-5 text-yellow-400 hover:border-yellow-100 hover:text-yellow-100"
+          href="#contact"
         >
-          Contact Me
-        </button>
+          {t("contact.part1")}
+        </a>
       </div>
       <CircleImage size={500} />
       <div className="flex flex-col justify-end space-y-5 before:mx-auto before:mb-5 before:inline-block before:h-1/4 before:w-[2px] before:bg-yellow-500">

@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 // Layout
 import Layout from "../../layout";
 
@@ -8,6 +7,8 @@ import Banner from "./Banner";
 import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Expereince";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home: FC = () => {
   return (
@@ -17,6 +18,8 @@ const Home: FC = () => {
         <About />
         <Skills />
         <Experience />
+        <Projects />
+        <Contact />
       </div>
     </Layout>
   );
