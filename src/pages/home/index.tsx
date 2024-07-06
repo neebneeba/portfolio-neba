@@ -1,5 +1,5 @@
 import { FC } from "react";
-\
+
 // Layout
 import Layout from "../../layout";
 

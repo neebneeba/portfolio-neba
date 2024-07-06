@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useId } from "react";
 
 // Components
 import ProjectItem from "../../components/ProjectItem";
@@ -35,6 +35,7 @@ const Projects: FC = () => {
       <div className="grid grid-cols-3 gap-5">
         {projects.map((item) => (
           <ProjectItem
+            key={useId()}
             name={item.name}
             thumb={item.thumb}
             description={item.description}
