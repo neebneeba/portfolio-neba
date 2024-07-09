@@ -4,15 +4,20 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home";
 import ProjectDetail from "../pages/project-detail";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/project-detail",
+      element: <ProjectDetail />,
+    },
+  ],
   {
-    path: "/",
-    element: <Home />,
+    basename: "/portfolio-neba",
   },
-  {
-    path: "/project-detail",
-    element: <ProjectDetail />,
-  },
-]);
+);
 
 export default router;
