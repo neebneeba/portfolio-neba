@@ -1,4 +1,5 @@
 import { FC, useId } from "react";
+import { useTranslation } from "react-i18next";
 
 // Components
 import ExperienceItem from "../../components/ExperienceItem";
@@ -33,6 +34,8 @@ const experiences: Array<{
 ];
 
 const Experience: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-stone-700">
       <div className="container relative">
@@ -40,7 +43,7 @@ const Experience: FC = () => {
           id="experience"
           className="absolute -translate-y-8 font-oswald text-5xl font-bold"
         >
-          Experience
+          {t("sections.experience")}
         </h1>
         <div className="space-y-20 py-20">
           {experiences.map((experience) => (

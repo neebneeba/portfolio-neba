@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from "react";
 import { Field, Label, Radio, RadioGroup } from "@headlessui/react";
+import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
 
 const languages: Array<{
@@ -25,6 +26,7 @@ const languages: Array<{
 ];
 
 const Language: FC = () => {
+  const { i18n } = useTranslation();
   let [selected, setSelected] = useState<string>(languages[0].value);
 
   useEffect(() => {
@@ -36,6 +38,10 @@ const Language: FC = () => {
       Cookies.set("lang", selected);
     }
   }, []);
+
+  useEffect(() => {
+    i18n.changeLanguage(selected);
+  }, [selected]);
 
   function handleChange(value: string) {
     setSelected(value);

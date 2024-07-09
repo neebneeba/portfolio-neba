@@ -10,11 +10,9 @@ const Banner: FC = () => {
   return (
     <div className="flex flex-row justify-center space-x-10">
       <div className="my-auto space-y-10 text-2xl">
-        <strong className="text-4xl text-yellow-400">
-          Bat-Erdene Nerguibaatar
-        </strong>
+        <strong className="text-4xl text-yellow-400">{t("name")}</strong>
         <br />
-        Software Engineer
+        {t("role")}
         <br />
         <a
           className="inline-block rounded border border-yellow-400 px-10 py-5 text-yellow-400 hover:border-yellow-100 hover:text-yellow-100"

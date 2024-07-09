@@ -1,23 +1,26 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 // Components
 import Language from "../components/Language";
 
 const Header: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container mb-20 flex justify-between py-5">
       <div className="my-auto flex flex-row space-x-20">
         <a href="" className="font-lgxw text-2xl font-semibold">
-          Home
+          {t("sections.home")}
         </a>
         <a href="#skills" className="font-lgxw text-2xl font-semibold">
-          Skills
+          {t("sections.skills")}
         </a>
         <a href="#experience" className="font-lgxw text-2xl font-semibold">
-          Experience
+          {t("sections.experience")}
         </a>
         <a href="#projects" className="font-lgxw text-2xl font-semibold">
-          Projects
+          {t("sections.projects")}
         </a>
       </div>
       <Language />

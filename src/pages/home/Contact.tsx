@@ -1,6 +1,9 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col space-y-5">
       <div className="mb-20 flex before:block before:h-1 before:w-[40%] before:bg-yellow-500 after:block after:h-1 after:w-[40%] after:bg-yellow-500">
@@ -8,7 +11,7 @@ const Contact: FC = () => {
           id="contact"
           className="mx-auto w-[20%] -translate-y-8 text-center font-oswald text-5xl font-bold"
         >
-          Contact Me
+          {t("contactMe")}
         </div>
       </div>
       <div className="container grid grid-cols-5 gap-5 rounded-lg bg-stone-600 p-10">

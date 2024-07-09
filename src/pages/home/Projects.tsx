@@ -1,4 +1,5 @@
 import { FC, useId } from "react";
+import { useTranslation } from "react-i18next";
 
 // Components
 import ProjectItem from "../../components/ProjectItem";
@@ -29,9 +30,13 @@ const projects: Array<{
 ];
 
 const Projects: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="projects" className="container flex flex-col space-y-10">
-      <h1 className="mx-auto font-oswald text-5xl font-bold">Projects</h1>
+      <h1 className="mx-auto font-oswald text-5xl font-bold">
+        {t("sections.projects")}
+      </h1>
       <div className="grid grid-cols-3 gap-5">
         {projects.map((item) => (
           <ProjectItem
