@@ -9,7 +9,7 @@ const CircleImage: FC<{ size: number }> = (props) => {
       }}
     >
       <img
-        src="src/assets/images/me-without-background.png"
+        src="images/me-without-background.png"
         className="h-full w-full object-contain"
         alt="Circle Image"
       />

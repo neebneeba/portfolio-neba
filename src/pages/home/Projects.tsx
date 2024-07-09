@@ -11,19 +11,19 @@ const projects: Array<{
 }> = [
   {
     name: "Egazar",
-    thumb: "src/assets/images/egazar.png",
+    thumb: "images/egazar.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit aspernatur eligendi consectetur quia obcaecati illum asperiores! Cum, iure ipsum?",
   },
   {
     name: "Tavanbogd Capital",
-    thumb: "src/assets/images/tavanbogdcapital.png",
+    thumb: "images/tavanbogdcapital.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit aspernatur eligendi consectetur quia obcaecati illum asperiores! Cum, iure ipsum?",
   },
   {
     name: "Telemarketing",
-    thumb: "src/assets/images/telemarketing.png",
+    thumb: "images/telemarketing.png",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit aspernatur eligendi consectetur quia obcaecati illum asperiores! Cum, iure ipsum?",
   },

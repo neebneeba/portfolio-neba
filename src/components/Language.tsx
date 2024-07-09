@@ -10,17 +10,17 @@ const languages: Array<{
 }> = [
   {
     name: "English",
-    flag: "src/assets/flags/united-states.png",
+    flag: "flags/united-states.png",
     value: "en",
   },
   {
     name: "Монгол",
-    flag: "src/assets/flags/mongolia.png",
+    flag: "flags/mongolia.png",
     value: "mn",
   },
   {
     name: "日本語",
-    flag: "src/assets/flags/japan.png",
+    flag: "flags/japan.png",
     value: "jp",
   },
 ];

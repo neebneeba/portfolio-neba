@@ -9,70 +9,67 @@ const skills: Array<{
   title: string;
 }> = [
   {
-    icons: [
-      "src/assets/icons/icons8-html-logo.svg",
-      "src/assets/icons/icons8-css-logo.svg",
-    ],
+    icons: ["icons/icons8-html-logo.svg", "icons/icons8-css-logo.svg"],
     title: "Html & CSS",
   },
   {
-    icons: ["src/assets/icons/icons8-javascript.svg"],
+    icons: ["icons/icons8-javascript.svg"],
     title: "Javascript",
   },
   {
-    icons: ["src/assets/icons/icons8-git.svg"],
+    icons: ["icons/icons8-git.svg"],
     title: "Git Source Control",
   },
   {
-    icons: ["src/assets/icons/icons8-linux-96.png"],
+    icons: ["icons/icons8-linux-96.png"],
     title: "Linux",
   },
   {
-    icons: ["src/assets/icons/icons8-postgres.svg"],
+    icons: ["icons/icons8-postgres.svg"],
     title: "Postgres",
   },
   {
-    icons: ["src/assets/icons/icons8-mongodb.svg"],
+    icons: ["icons/icons8-mongodb.svg"],
     title: "MongoDB",
   },
   {
-    icons: ["src/assets/icons/icons8-react-js.svg"],
+    icons: ["icons/icons8-react-js.svg"],
     title: "ReactJS",
   },
   {
-    icons: ["src/assets/icons/icons8-vue-js.svg"],
+    icons: ["icons/icons8-vue-js.svg"],
     title: "VueJS",
   },
   {
-    icons: ["src/assets/icons/icons8-tailwindcss.svg"],
+    icons: ["icons/icons8-tailwindcss.svg"],
     title: "TailwindCSS",
   },
   {
-    icons: ["src/assets/icons/icons8-nodejs.svg"],
+    icons: ["icons/icons8-nodejs.svg"],
     title: "NodeJS",
   },
   {
-    icons: ["src/assets/icons/icons8-nestjs.svg"],
+    icons: ["icons/icons8-nestjs.svg"],
     title: "NestJS",
   },
   {
-    icons: ["src/assets/icons/icons8-nginx.svg"],
+    icons: ["icons/icons8-nginx.svg"],
     title: "Nginx",
   },
   {
-    icons: ["src/assets/icons/icons8-docker.svg"],
+    icons: ["icons/icons8-docker.svg"],
     title: "Docker",
   },
   {
-    icons: ["src/assets/icons/icons8-google-cloud.svg"],
+    icons: ["icons/icons8-google-cloud.svg"],
     title: "Google Cloud",
   },
   {
-    icons: ["src/assets/icons/icons8-flutter.svg"],
+    icons: ["icons/icons8-flutter.svg"],
     title: "Flutter",
   },
   {
-    icons: ["src/assets/icons/icons8-java.svg"],
+    icons: ["icons/icons8-java.svg"],
     title: "Java",
   },
 ];
