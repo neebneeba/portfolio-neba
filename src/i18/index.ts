@@ -3,6 +3,10 @@ import { initReactI18next } from "react-i18next";
 
 import LanguageDetector from "i18next-browser-languagedetector";
 
+// Translations
+import mn from "../tanslations/mn";
+import en from "../tanslations/en";
+
 i18n
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
@@ -19,13 +23,10 @@ i18n
     },
     resources: {
       en: {
-        translation: {
-          contact: {
-            part1: "Холбоо барих",
-            part2: "Contact",
-          },
-          // here we will place our translations...
-        },
+        translation: en,
+      },
+      mn: {
+        translation: mn,
       },
     },
   });

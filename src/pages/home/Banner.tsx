@@ -20,7 +20,7 @@ const Banner: FC = () => {
           className="inline-block rounded border border-yellow-400 px-10 py-5 text-yellow-400 hover:border-yellow-100 hover:text-yellow-100"
           href="#contact"
         >
-          {t("contact.part1")}
+          {t("contactMe")}
         </a>
       </div>
       <CircleImage size={500} />
