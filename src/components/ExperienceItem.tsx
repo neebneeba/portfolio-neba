@@ -3,7 +3,7 @@ import { FC } from "react";
 const ExperienceItem: FC<{
   date: string;
   title: string;
-  subtitle: string;
+  companyName: string;
   paragraph: string;
 }> = (props) => {
   return (
@@ -19,7 +19,7 @@ const ExperienceItem: FC<{
       </div>
       <div className="col-span-3 flex flex-col space-y-5">
         <h2 className="font-oswald text-5xl text-white">{props.title}</h2>
-        <h5 className="text-3xl text-white">{props.subtitle}</h5>
+        <h5 className="text-3xl text-white">{props.companyName}</h5>
         <p className="text-xl">{props.paragraph}</p>
       </div>
     </div>
