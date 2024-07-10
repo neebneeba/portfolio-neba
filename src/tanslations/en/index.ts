@@ -11,7 +11,14 @@ const en = {
   about: {
     title: "About",
     paragraph:
-      "Hello. I am a Software Engineer currently entering my 4th year in the profession. In 2020, he graduated from Khuree Institute of Information and Communication Technology in Ulaanbaatar, the capital of Mongolia, majoring in Computer Science. Please read my introduction.",
+      "Hello, I am a Software Engineer entering my 4th year in the profession. I graduated in 2020 from the Khuree Institute of Information and Communication Technology in Ulaanbaatar, Mongolia, with a major in Computer Science.",
+  },
+  experience: {
+    softMaster: {
+      title: "FullStack Engineer",
+      companyName: "Soft Master LLC",
+      paragraph: `I started my career in December 2019 as a FullStack engineer at a startup company that had just begun operations in Mongolia. We primarily used the PHP Laravel framework. My university background greatly helped me in this role, and I also gained valuable knowledge that wasn't covered in my academic studies. My main responsibilities included designing systems based on customer requests and introducing the services to new customers.`,
+    },
   },
   designedBy: "Designed By",
 };
