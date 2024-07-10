@@ -8,7 +8,7 @@ const Skill: FC<{ icon: Array<string>; title: string }> = (props) => {
           <img src={item} key={useId()} />
         ))}
       </div>
-      <h5 className="font-oswald mx-auto font-bold">{props.title}</h5>
+      <h5 className="mx-auto font-oswald font-bold">{props.title}</h5>
     </div>
   );
 };
