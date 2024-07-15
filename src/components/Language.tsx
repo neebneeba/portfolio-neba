@@ -56,10 +56,7 @@ const Language: FC = () => {
       className="flex space-x-5 rounded bg-white bg-opacity-20 p-0.5 font-roboto"
     >
       {languages.map((language) => (
-        <Field
-          key={language.value}
-          className="flex flex-row items-center gap-2"
-        >
+        <Field key={language.value} className="flex flex-row">
           <Radio
             value={language.value}
             className="flex space-x-2 rounded p-2 outline-none hover:cursor-pointer data-[checked]:bg-white data-[checked]:bg-opacity-30"
