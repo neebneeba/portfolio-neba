@@ -2,6 +2,7 @@ import { FC, ReactElement, useEffect, useState } from "react";
 
 // Components
 import Header from "./Header";
+import SideBar from "./Sidebar";
 import Footer from "./Footer";
 
 const Layout: FC<{ children: ReactElement }> = (props) => {
@@ -32,6 +33,7 @@ const Layout: FC<{ children: ReactElement }> = (props) => {
     <div className="flex flex-row">
       <div className="flex w-full flex-col">
         <Header />
+        <SideBar />
         {props.children}
         <Footer />
       </div>
