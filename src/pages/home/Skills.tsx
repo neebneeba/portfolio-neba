@@ -82,7 +82,7 @@ const Skills: FC = () => {
       <h1 className="mx-auto font-oswald text-5xl font-bold">
         {t("sections.skills")}
       </h1>
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid grid-cols-3 gap-3 px-5 md:grid-cols-3 md:px-5 lg:grid-cols-4 lg:gap-5 lg:px-10">
         {skills.map((item) => (
           <Skill icon={item.icons} key={useId()} title={item.title} />
         ))}
