@@ -78,8 +78,11 @@ const Skills: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="skills" className="container flex flex-col space-y-5">
-      <h1 className="mx-auto font-oswald text-5xl font-bold">
+    <div
+      id="skills"
+      className="container flex flex-col space-y-5 md:space-y-10"
+    >
+      <h1 className="mx-auto font-oswald text-2xl font-bold md:text-5xl">
         {t("sections.skills")}
       </h1>
       <div className="grid grid-cols-3 gap-3 px-5 md:grid-cols-3 md:px-5 lg:grid-cols-4 lg:gap-5 lg:px-10">
