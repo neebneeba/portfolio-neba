@@ -33,11 +33,14 @@ const Projects: FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="projects" className="container flex flex-col space-y-10">
-      <h1 className="mx-auto font-oswald text-5xl font-bold">
+    <div
+      id="projects"
+      className="container flex flex-col space-y-5 md:space-y-10"
+    >
+      <h1 className="mx-auto font-oswald text-2xl font-bold md:text-5xl">
         {t("sections.projects")}
       </h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-5 px-5 md:grid-cols-3">
         {projects.map((item) => (
           <ProjectItem
             key={useId()}
