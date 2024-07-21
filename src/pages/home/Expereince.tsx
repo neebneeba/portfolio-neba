@@ -36,11 +36,11 @@ const Experience: FC = () => {
   ];
 
   return (
-    <div className="bg-stone-700">
-      <div className="container relative">
+    <div className="flex bg-stone-700">
+      <div className="container relative px-5">
         <h1
           id="experience"
-          className="absolute -translate-y-8 font-oswald text-5xl font-bold"
+          className="absolute -translate-y-5 font-oswald text-2xl font-bold lg:-translate-y-8 lg:text-5xl"
         >
           {t("sections.experience")}
         </h1>
