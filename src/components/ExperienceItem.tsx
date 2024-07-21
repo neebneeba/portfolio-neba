@@ -7,21 +7,21 @@ const ExperienceItem: FC<{
   paragraph: string;
 }> = (props) => {
   return (
-    <div className="grid grid-cols-4 gap-20">
-      <div className="col-span-1 flex flex-col space-y-5">
-        <div className="ml-auto flex space-x-10">
-          <div className="year-tag flex bg-stone-500 before:border-l-stone-500">
-            <h3 className="m-auto text-3xl font-bold">{props.date}</h3>
-          </div>
-          <div className="h-10 w-10 rounded-full bg-yellow-300 shadow-lg shadow-orange-400"></div>
+    <div className="flex flex-col space-y-2 lg:col-span-3 lg:space-y-5">
+      <h2 className="font-oswald text-2xl text-yellow-300 lg:text-5xl">
+        {props.title}
+      </h2>
+      <div className="flex justify-start space-x-2 lg:space-x-5">
+        <div className="my-auto inline-block h-min rounded border-2 border-blue-500 px-2 py-0.5 text-xs font-bold lg:text-3xl">
+          {props.date}
         </div>
-        <div className="ml-auto h-full w-10 before:mx-auto before:block before:h-full before:w-1 before:rounded before:bg-white"></div>
+        <h5 className="my-auto text-lg text-cyan-400 lg:text-3xl">
+          {props.companyName}
+        </h5>
       </div>
-      <div className="col-span-3 flex flex-col space-y-5">
-        <h2 className="font-oswald text-5xl text-white">{props.title}</h2>
-        <h5 className="text-3xl text-white">{props.companyName}</h5>
-        <p className="text-xl">{props.paragraph}</p>
-      </div>
+      <p className="border-l-2 pl-2 text-justify text-xs lg:pl-5 lg:text-3xl">
+        {props.paragraph}
+      </p>
     </div>
   );
 };
