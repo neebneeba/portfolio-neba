@@ -1,7 +1,6 @@
 # portfolio-neba
 
-I created this repo for my own portfolio. And If you want to use this project I don't mind it.
-
+I created this repo for my own portfolio.
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
